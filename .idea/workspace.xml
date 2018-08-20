@@ -2,61 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdabe6fe-86d5-494f-8506-8205db38ac16" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/bg@1x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/bg@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/Oval Copy@1x.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/Oval@1x.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/arrow-down.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/arrow-left.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/background.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/cloud-drizzle.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/icon_list_m@1x.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/icon_scheduled.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/icon_sun.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/icon_sun_2.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/icon_sun_max.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/icon_sun_min.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/icon_temperature.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/icon_temperature_2.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/icons/Яндекс Дом.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/images.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/symbols.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/js/bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/icons/Oval@1x.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/icons/arrow-left.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/icons/circle_part.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/icons/hamburger.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/icons/sun_on.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/icons/temperature_on.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/icons/Яндекс Дом.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/images.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/Яндекс Дом.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/base/typography.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/templates.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/build/img/Яндекс Дом.svg" afterPath="$PROJECT_DIR$/src/img/logo.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/bg@1x.png" afterPath="$PROJECT_DIR$/src/img/welcome-bg@1x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/bg@2x.png" afterPath="$PROJECT_DIR$/src/img/welcome-bg@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/icons/background.svg" afterPath="$PROJECT_DIR$/src/img/icons/circle.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/icons/cloud-drizzle.svg" afterPath="$PROJECT_DIR$/src/img/icons/cloud.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/icons/icon_scheduled.svg" afterPath="$PROJECT_DIR$/src/img/icons/scheduled.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/icons/icon_sun.svg" afterPath="$PROJECT_DIR$/src/img/icons/sun.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/icons/icon_sun_max.svg" afterPath="$PROJECT_DIR$/src/img/icons/sun_max.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/icons/icon_sun_min.svg" afterPath="$PROJECT_DIR$/src/img/icons/sun_min.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/icons/icon_temperature.svg" afterPath="$PROJECT_DIR$/src/img/icons/temperature.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/icons/arrow-down.svg" afterPath="$PROJECT_DIR$/src/img/icons/arrow-down.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/base/base.scss" afterPath="$PROJECT_DIR$/src/styles/base/base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/blocks/filter.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/filter.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/blocks/header__inner.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/header__inner.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/blocks/section.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/section.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/blocks/welcome.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/welcome.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/main.scss" afterPath="$PROJECT_DIR$/src/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/index.pug" afterPath="$PROJECT_DIR$/src/templates/index.pug" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/arrow-down.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/arrow-left.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/background.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/circle.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/circle_part.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/cloud-drizzle.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/hamburger.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/scheduled.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/sun.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/sun_max.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/sun_min.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/sun_on.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/temperature.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bb/icons/temperature_on.svg" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -288,52 +247,6 @@
               <item name="entrance-task-2-2" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="entrance-task-2-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="entrance-task-2-2" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="entrance-task-2-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="entrance-task-2-2" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="icons" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="entrance-task-2-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="entrance-task-2-2" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="entrance-task-2-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="entrance-task-2-2" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="base" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="entrance-task-2-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="entrance-task-2-2" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="blocks" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="entrance-task-2-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="entrance-task-2-2" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="entrance-task-2-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="entrance-task-2-2" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -385,7 +298,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18168813" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18168813" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -393,7 +306,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13663845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13663845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
