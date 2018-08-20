@@ -3,10 +3,13 @@
 }
 
 .welcome__inner {
-  background-color: $gray-light;
+  //background-color: $gray-light;
   border-radius: 20px;
   padding: 20px;
   overflow: hidden;
+  background-image: url(../img/welcome-bg@1x.png);
+  background-position: 0 0;
+  background-size: cover;
 }
 
 .welcome__heading {

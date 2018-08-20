@@ -1,0 +1,12 @@
+.text {
+  margin: 0;
+  font-size: 12px;
+
+  &--dark {
+    color: $gray-dark;
+  }
+
+  &--light {
+    color: $gray;
+  }
+}

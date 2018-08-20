@@ -29,7 +29,7 @@ gulp.task('styles', function () {
     .pipe(plumber({errorHandler: onError}))
     .pipe(sass({indentedSyntax: true}))
     .pipe(autoprefixer({
-      browsers: ['last 5 versions'],
+      browsers: ['last 2 versions'],
       cascade: false
     }))
     .pipe(gulp.dest('./build/css'));
@@ -52,7 +52,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('images', function () {
-  gulp.src('src/img/**/*')
+  gulp.src('src/img/*')
     .pipe(cache(imagemin({
       optimizationLevel: 3,
       progressive: true,
@@ -63,11 +63,13 @@ gulp.task('images', function () {
 
 gulp.task("icons", function () {
   gulp.src("src/img/icons/*.svg")
+    .pipe(plumber({errorHandler: onError}))
     .pipe(svgmin())
+    .pipe(gulp.dest("build/img/icons"))
     .pipe(svgstore({
       inlineSvg: true
     }))
-    .pipe(rename("symbols.svg"))
+    .pipe(rename("icons.svg"))
     .pipe(gulp.dest("build/img"));
 });
 
@@ -78,7 +80,7 @@ gulp.task('default', function () {
 
 gulp.task('watch', function () {
   gulp.watch('src/styles/**/*', ['styles']);
-  gulp.watch(['src/templates/*', './*.pug'], ['templates']);
+  gulp.watch(['src/templates/**/*', './*.pug'], ['templates']);
   gulp.watch('src/js/*.js', ['scripts']);
   gulp.watch('src/img/**/*', ['images']);
   gulp.watch('src/img/icons/*.svg', ['icons']);

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+doctype html
 html(lang="ru")
   head
   meta(charset="UTF-8")
@@ -8,25 +8,11 @@ html(lang="ru")
   link(rel="stylesheet" href="css/main.css")
 
   body
-    header.header
-      div.header__inner
-        a.header__logo
-          img.header__logo-pic(width="98" height="39" alt="Яндекс Дом")
-        a.header__btn
-          span.visually-hidden Открыть меню
-        nav.header__menu.menu
-          ul.menu__list
-            li.menu__item
-              a.menu__link Сводка
-            li.menu__item
-              a.menu__link Устройства
-            li.menu__item
-              a.menu__link Сценарии
-
+    include components/header
     main
       section.welcome.section
         div.welcome__inner
-          h2.heading.heading--l Привет,
+          h2.heading.heading--l Привет,&nbsp;
             span.welcome__user Геннадий!
           p.text.text--dark Двери и&nbsp;окна закрыты, сигнализация включена.
           div.forecast
@@ -76,6 +62,9 @@ html(lang="ru")
             div.filter
               a.filter-btn(href="#")
                 span.filter-active Все
+                span.icon
+                  svg(width="16px" height="10px")
+                    use(xlink:href="img/icons.svg#arrow-down")
           div.slider.slider--s
             div.slider__block.block.block--gray
               div.slider__inner.slider__inner--light.slider__inner--on
@@ -90,21 +79,6 @@ html(lang="ru")
                 p.heading.heading--m D-Link Omna 180 Cam
                 p.text.text--gray Включится в 17:00
 
-    footer.footer
-      div.footer__inner
-        ul.footer__nav
-          li.footer__nav-item
-            a.footer__nav-link Помощь
-          li.footer__nav-item
-            a.footer__nav-link Обратная связь
-          li.footer__nav-item
-            a.footer__nav-link Разработчикам
-          li.footer__nav-item
-            a.footer__nav-link Условия использования
-        div.copyright
-          p.copyright__date &copy; 2001&ndash;
-            span.copyright__currentyear.currentyear
-          a.copyright__link(href="https://yandex.ru" target="_blank") ООО &laquo;Яндекс&raquo;
-
+    include components/footer
     script(src="js/bundle.js")
 

@@ -1,0 +1,18 @@
+header.header
+  div.header__inner.section.section--nospace
+    a.header__logo
+      img.header__logo-pic(src="img/logo.svg" width="98" height="39" alt="Яндекс Дом")
+    a(href="#").header__btn
+      span.icon
+        svg(width="16px" height="20px")
+          use(xlink:href="img/icons.svg#menu")
+
+      span.visually-hidden Открыть меню
+    nav.header__menu.menu
+      ul.menu__list
+        li.menu__item
+          a.menu__link Сводка
+        li.menu__item
+          a.menu__link Устройства
+        li.menu__item
+          a.menu__link Сценарии

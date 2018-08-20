@@ -5,18 +5,9 @@
 }
 
 .filter-active {
-  position: relative;
-  padding-right: $gap-m;
   text-decoration: none;
   color: $black;
   font-weight: 700;
   font-size: 13px;
   line-height: 13px;
-
-  &::before {
-    content: ">";
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
 }
