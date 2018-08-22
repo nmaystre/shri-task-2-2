@@ -1,0 +1,23 @@
+.menu {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.menu__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: $gap-l;
+  background-color: $white;
+}
+
+.menu__item {
+  font-weight: 700;
+  font-size: 18px;
+  color: $gray-dark;
+}

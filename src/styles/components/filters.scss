@@ -1,0 +1,39 @@
+.filters {
+  overflow: hidden;
+  padding: 0 $gap-l;
+}
+
+.filters__list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.filters__item {
+  flex-shrink: 0;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.filters__link {
+  display: inline-block;
+  border-radius: 20px;
+  background-color: $gray-light;
+  padding: 8px 15px;
+  font-size: 13px;
+  transition: all 0.15s linear;
+
+  &--on {
+    background-color: $primary;
+  }
+
+  &:hover, &:focus {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}

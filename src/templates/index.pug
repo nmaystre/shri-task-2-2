@@ -18,30 +18,35 @@ html(lang="ru")
           div.forecast
             div.forecast__block
               p.forecast__location.text.text--light Дома
-              p.forecast__text +23
+              p.forecast__text
+                span +23
             div.forecast__block
               p.forecast__location.text.text--light За окном
-              p.forecast__text.forecast__text--rain +19
+              p.forecast__text.forecast__text--rain
+                span  +19
+                span.icon.forecast__icon
+                  svg(width="20px" height="20px")
+                    use(xlink:href="img/icons.svg#cloud")
           div.slider.slider--m
             div.slider__block
-              div.slider__inner.slider__inner--temp.slider__inner--off
-                p.heading.heading--m Philips Cooler
+              div.slider__inner.slider__inner--temp-off
+                p.slider__heading.heading.heading--m Philips Cooler
                 p.text.text--light Начнет охлаждать в&nbsp;16:30
             div.slider__block
-              div.slider__inner.slider__inner--light.slider__inner--off
-                p.heading.heading--m Xiaomi Yeelight LED Smart Bulb
+              div.slider__inner.slider__inner--light-off
+                p.slider__heading.heading.heading--m Xiaomi Yeelight LED Smart Bulb
                 p.text.text--light Включится в&nbsp;17:00
             div.slider__block
-              div.slider__inner.slider__inner--temp.slider__inner--off
-                p.heading.heading--m Elgato Eve Degree Connected
+              div.slider__inner.slider__inner--temp-off
+                p.slider__heading.heading.heading--m Elgato Eve Degree Connected
                 p.text.text--light Выключено до&nbsp;17:00
             div.slider__block
-              div.slider__inner.slider__inner--light.slider__inner--off
-                p.heading.heading--m LIFX Mini Day & Dusk A60 E27
+              div.slider__inner.slider__inner--light-off
+                p.slider__heading.heading.heading--m LIFX Mini Day & Dusk A60 E27
                 p.text.text--light Включится в&nbsp;17:00
             div.slider__block
-              div.slider__inner.slider__inner--light.slider__inner--on
-                p.heading.heading--m Xiaomi Mi Air Purifier 2S
+              div.slider__inner.slider__inner--light-on
+                p.slider__heading.heading.heading--m Xiaomi Mi Air Purifier 2S
                 p.text.text--light Включено
 
       section.scenarios
@@ -49,36 +54,39 @@ html(lang="ru")
           h2.heading.heading--l Избранные сценарии
           div.slider.slider--s
             div.slider__block
-              div.slider__inner.slider__inner--light.slider__inner--on
-                p.heading.heading--m Выключить весь свет в&nbsp;доме и&nbsp;во&nbsp;дворе
+              div.slider__inner.slider__inner--light-on
+                p.slider__heading.heading.heading--m Выключить весь свет в&nbsp;доме и&nbsp;во&nbsp;дворе
             div.slider__block
-              div.slider__inner.slider__inner--clocks.slider__inner--on
-                p.heading.heading--m Я ухожу
+              div.slider__inner.slider__inner--clocks
+                p.slider__heading.heading.heading--m Я ухожу
 
       section.favorite
         div.section
-          div.section-header
+          div.section__header
             h2.heading.heading--l Избранные устройства
-            div.filter
-              a.filter-btn(href="#")
-                span.filter-active Все
-                span.icon
+            div.dropdown
+              a.dropdown__btn(href="#")
+                span.dropdown__active Все
+                span.icon.dropdown__icon
                   svg(width="16px" height="10px")
                     use(xlink:href="img/icons.svg#arrow-down")
-          div.slider.slider--s
+          div.slider.slider--m
             div.slider__block.block.block--gray
-              div.slider__inner.slider__inner--light.slider__inner--on
-                p.heading.heading--m Xiaomi Yeelight LED Smart Bulb
+              div.slider__inner.slider__inner--light-on
+                p.slider__heading.heading.heading--m Xiaomi Yeelight LED Smart Bulb
                 p.text.text--gray Включено
             div.slider__block.block.block--gray
-              div.slider__inner.slider__inner--clocks.slider__inner--off
-                p.heading.heading--m D-Link Omna 180 Cam
+              div.slider__inner.slider__inner--light-off
+                p.slider__heading.heading.heading--m D-Link Omna 180 Cam
                 p.text.text--gray Включится в 17:00
             div.slider__block.block.block--gray
-              div.slider__inner.slider__inner--clocks.slider__inner--off
-                p.heading.heading--m D-Link Omna 180 Cam
+              div.slider__inner.slider__inner--light-off
+                p.slider__heading.heading.heading--m D-Link Omna 180 Cam
                 p.text.text--gray Включится в 17:00
 
     include components/footer
+
+    include components/modal-light
+
     script(src="js/bundle.js")
 

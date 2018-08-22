@@ -1,17 +1,26 @@
 @import 'base/variables.scss';
+@import 'base/mixins.scss';
 @import 'base/base.scss';
+@import 'base/grid.scss';
+@import 'base/icon.scss';
 
-@import 'blocks/section.scss';
-@import 'blocks/heading.scss';
-@import 'blocks/text.scss';
+@import 'components/section.scss';
+@import 'components/heading.scss';
+@import 'components/text.scss';
 
-@import 'blocks/header.scss';
-@import 'blocks/header__inner.scss';
-@import 'blocks/footer.scss';
+@import 'components/header.scss';
+@import 'components/header__inner.scss';
+@import 'components/footer.scss';
 
-@import 'blocks/menu.scss';
-@import 'blocks/welcome.scss';
-@import 'blocks/forecast.scss';
-@import 'blocks/slider.scss';
-@import 'blocks/filter.scss';
-@import 'blocks/copyright.scss';
+@import 'components/hamburger.scss';
+@import 'components/menu.scss';
+@import 'components/welcome.scss';
+@import 'components/forecast.scss';
+@import 'components/slider.scss';
+@import 'components/dropdown.scss';
+@import 'components/copyright.scss';
+@import 'components/modal.scss';
+@import 'components/diagram.scss';
+@import 'components/filters.scss';
+@import 'components/range.scss';
+
