@@ -14,6 +14,10 @@ $range-width: 60px;
   box-sizing: content-box;
   display: flex;
   flex-grow: 1;
+  @media #{$breakpointTablet} {
+    min-height: inherit;
+    width: 100%;
+  }
 }
 
 .range__bar {
@@ -23,12 +27,21 @@ $range-width: 60px;
   height: $range-height;
   border-radius: 35px;
 
+  @media #{$breakpointTablet} {
+    width: 100%;
+    height: $range-width;
+    margin: 0 $gap-l;
+  }
+
   &--rainbow {
     background-image: linear-gradient($accent-orange 0%, $accent-yellow 50%, $accent-blue 100%);
   }
 
   &--primary {
     background-image: linear-gradient($yellow-dark 0%, $yellow-light 100%);
+    @media #{$breakpointTablet} {
+      background-image: linear-gradient(-90deg, $yellow-dark 0%, $yellow-light 100%);
+    }
   }
 }
 
@@ -43,25 +56,54 @@ $range-width: 60px;
   border-radius: 50%;
   border: 3px solid rgba(51,51,51,0.10);
   box-shadow: 0 0 0 4px $white;
+
+  @media #{$breakpointTablet} {
+    left: 40%;
+    right: inherit;
+    top: 0;
+    bottom: 0;
+    margin-top: 0;
+    margin-left: -30px;
+  }
 }
 
-.range__text {
+.range__caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: 0;
-  right: 0;
-  font-size: 18px;
-  line-height: 21px;
-  color: $white;
-  font-weight: 700;
+  width:100%;
   text-align: center;
+  @media #{$breakpointTablet} {
+    width: auto;
+    height:100%;
+  }
 
   &--max {
     top: $gap-m;
+    @media #{$breakpointTablet} {
+      top: 0;
+      bottom: 0;
+      left: inherit;
+      right: $gap-m;
+    }
   }
 
   &--min {
     bottom: $gap-m;
+    @media #{$breakpointTablet} {
+      bottom: 0;
+      left: $gap-m;
+    }
   }
+}
+
+.range__text {
+  font-size: 18px;
+  line-height: 21px;
+  color: $white;
+  font-weight: 700;
 }
 
 .range__icon {
