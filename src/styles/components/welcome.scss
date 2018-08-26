@@ -5,13 +5,32 @@
 .welcome__inner {
   //background-color: $gray-light;
   border-radius: 20px;
-  padding: 20px;
+  padding: 20px 0 20px 20px;
   overflow: hidden;
   background-image: url(../img/welcome-bg@1x.png);
   background-position: 40% 0%;
   background-size: cover;
+  background-repeat: no-repeat;
+
+  @media #{$breakpointTablet} {
+    background-position: 0% 0%;
+    background-image: url(../img/welcome-bg@2x.png);
+    height: 330px;
+    padding-bottom: 0;
+  }
+
+  @media #{$breakpointDesktop} {
+    display: flex;
+    justify-content: space-between;
+    padding-right: $gap-l;
+  }
 }
 
 .welcome__heading {
-
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: 700;
+  @media #{$breakpointTablet} {
+    font-size: 27px;
+  }
 }

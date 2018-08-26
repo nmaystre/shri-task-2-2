@@ -1,31 +1,78 @@
-body {
+.grid {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 
-@supports (display: grid) {
-  display: grid;
-  grid-gap: 30px 0;
-  grid-template-rows: auto;
-  grid-template-columns: minmax(320px, auto);
-  grid-template-areas: "hd" "main" "ft";
-}
+  @supports (display: grid) {
+    display: grid;
+    grid-gap: $gap-m 0;
+    grid-template-rows: auto;
+    grid-template-columns: minmax(320px, auto);
+    grid-template-areas: "hd" "main" "ft";
+  }
+
+  @media #{$breakpointDesktop} {
+    @supports (display: grid) {
+      grid-gap: 0;
+      grid-template-rows: [hd] 90px [main] auto [ft] 90px;
+      grid-template-columns: 1fr;
+      grid-template-areas: "hd hd" "main main" "ft ft";
+    }
+  }
 }
 
-header {
+.grid__header {
   @supports (display: grid) {
     grid-area: hd;
   }
 }
 
-main {
+.grid__main {
   @supports (display: grid) {
     grid-area: main;
   }
+
+  @media #{$breakpointDesktop} {
+    display: flex;
+    flex-direction: column;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto auto;
+    padding: $gap-l $gap-xxl 0;
+
+    @supports (display: grid) {
+      display: grid;
+      grid-gap: $gap-l;
+      grid-template-columns: 50% 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "welcome scenarios" "favorite favorite";
+    }
+  }
 }
 
-footer {
+.grid__footer {
   @supports (display: grid) {
     grid-area: ft;
+  }
+}
+
+.grid__welcome {
+  @supports (display: grid) {
+    grid-area: welcome;
+  }
+}
+
+.grid__scenarios {
+   @supports (display: grid) {
+     grid-area: scenarios;
+   }
+ }
+
+.grid__favorite {
+  @supports (display: grid) {
+    grid-area: favorite;
+  }
+  @media #{$breakpointDesktop} {
+    margin-right: -$gap-xxl;
   }
 }

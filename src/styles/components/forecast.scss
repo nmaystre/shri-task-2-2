@@ -1,6 +1,10 @@
 .forecast{
   display: flex;
   margin: $gap-m 0 0;
+
+  @media #{$breakpointTablet} {
+    margin-top: $gap-l;
+  }
 }
 
 .forecast__block {
@@ -14,8 +18,22 @@
   margin: 5px 0;
   font-size: 24px;
   font-weight: 700;
+  @media #{$breakpointTablet} {
+    font-size: 36px;
+  }
 }
 
 .forecast__icon {
   margin-left: 5px;
+
+  & svg {
+    @media #{$breakpointTablet} {
+      width: 26px;
+      height: 26px;
+    }
+  }
+}
+
+.forecast__slider {
+
 }

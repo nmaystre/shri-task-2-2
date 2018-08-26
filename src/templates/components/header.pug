@@ -1,19 +1,18 @@
-header.header
-  div.header__inner.section.section--nospace
+header.header.grid__header
+  div.header__inner
     a.header__logo
       img.header__logo-pic(src="img/logo.svg" width="98" height="39" alt="Яндекс Дом")
-    a(href="#").header__btn.hamburger
+    a(href="#").header__btn.hamburger.menu__btn
       span.hamburger__icon
       //span.icon
       //  svg(width="16px" height="20px")
       //    use(xlink:href="img/icons.svg#menu")
-
       span.visually-hidden Открыть меню
     nav.header__menu.menu
       ul.menu__list
         li.menu__item
-          a.menu__link Сводка
+          a.menu__link.menu__link--active(href="#") Сводка
         li.menu__item
-          a.menu__link Устройства
+          a.menu__link(href="#") Устройства
         li.menu__item
-          a.menu__link Сценарии
+          a.menu__link(href="#") Сценарии

@@ -1,15 +1,13 @@
-var body = document.querySelectorAll("body"),
-    modalOpenBtn = document.querySelectorAll(".modal__open");
-    modalBody = document.querySelectorAll(".modal");
-
-for (var i=0; i <= modalOpen.length; i++) {
-  modalOpenBtn.onclick(function (evt) {
-    evt.preventDefault();
-    console.log('open please!');
-
-
-  });
-}
+// var body = document.querySelectorAll("body"),
+//     modalOpenBtn = document.querySelectorAll(".modal__open");
+//     modalBody = document.querySelectorAll(".modal");
+//
+// for (var i=0; i <= modalOpen.length; i++) {
+//   modalOpenBtn.onclick(function (evt) {
+//     evt.preventDefault();
+//     console.log('open please!');
+//   });
+// }
 
 
 // $(document).ready(function () {

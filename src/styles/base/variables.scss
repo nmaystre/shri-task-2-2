@@ -11,14 +11,19 @@ $white: #FFFFFF;
 $gray: #858585;
 $gray-dark: #333333;
 $gray-light: #F2F1F0;
+$gray-lighten: #F0F0F0;
+
 $gray-lightest: #F7F7F7;
 
 $yellow-dark: #FFB100;
 $yellow-light: #FFE88C;
 
+$gap-xxl: 40px;
 $gap-xl: 30px;
 $gap-l: 20px;
 $gap-m: 15px;
+$gap-s: 10px;
+
 
 $breakpointTablet: 'screen and (min-width: 768px)';
-$breakpointDesktop: 'screen and (min-width: 1024px)';
+$breakpointDesktop: 'screen and (min-width: 1200px)';

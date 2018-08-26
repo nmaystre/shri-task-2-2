@@ -1,9 +1,15 @@
 section.modal__wrp
   div.modal
     div.modal__inner
-      h2.modal__title.heading.heading--l Xiaomi Yeelight LED Smart Bulb
-      p.modal__text.text Включится в&nbsp;
-        span 17:00
+      header.modal__header
+        h2.modal__title.heading.heading--l Xiaomi Yeelight LED Smart Bulb
+        p.modal__text.text Включится в&nbsp;
+          span 17:00
+        div.modal__status
+          span.icon.modal__status-icon
+            svg(width="40px" height="40px")
+              use(xlink:href="img/icons.svg#sun")
+
       div.modal__content.range
         div.filters
           ul.filters__list
@@ -13,6 +19,8 @@ section.modal__wrp
               a.filters__link(href="#") Дневной свет
             li.filters__item
               a.filters__link(href="#") Вечерний свет
+            li.filters__item
+              a.filters__link(href="#") Рассвет
         div.range__content
           div.range__bar.range__bar--primary
             div.range__caption.range__caption--max
@@ -23,7 +31,7 @@ section.modal__wrp
                 use(xlink:href="img/icons.svg#sun_min")
             div.range__btn
 
-    a.btn.btn--primary.modal__btn
+    a.btn.btn--primary--darken.modal__btn(href="#")
       span Применить
-    a.btn.btn--light.modal__btn
+    a.btn.btn--light.modal__btn(href="#")
       span Закрыть

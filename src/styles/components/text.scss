@@ -1,6 +1,9 @@
 .text {
   margin: 0;
   font-size: 12px;
+  @media #{$breakpointTablet} {
+    font-size: 14px;
+  }
 
   &--dark {
     color: $gray-dark;

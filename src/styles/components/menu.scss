@@ -1,9 +1,24 @@
 .menu {
-  display: block;
+  visibility: hidden;
+  opacity: 0;
   width: 100%;
   position: absolute;
-  top: 0;
+  top: 100%;
   left: 0;
+  z-index: 1;
+  transition: all 0.15s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+  @media #{$breakpointTablet} {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+  }
+
+  &--open {
+    visibility: visible;
+    opacity: 1;
+    box-shadow: 0 6px 6px 0 rgba(197, 186, 186, 0.5);
+  }
 }
 
 .menu__list {
@@ -12,12 +27,36 @@
   flex-direction: column;
   list-style: none;
   margin: 0;
-  padding: $gap-l;
   background-color: $white;
+  padding: $gap-m $gap-l;
+
+  @media #{$breakpointTablet} {
+    padding: $gap-l;
+    flex-direction: row;
+    background-color: transparent;
+  }
 }
 
 .menu__item {
   font-weight: 700;
   font-size: 18px;
   color: $gray-dark;
+  padding: $gap-m 0;
+  @media #{$breakpointTablet} {
+    padding: 0;
+  }
+}
+
+.menu__link {
+  @media #{$breakpointTablet} {
+    margin: 0 $gap-l;
+    color: $gray;
+  }
+
+  &--active {
+    color: $gray-dark;
+    @media #{$breakpointTablet} {
+      color: $gray-dark;
+    }
+  }
 }

@@ -12,6 +12,8 @@
   display: flex;
 }
 
+
+
 .modal {
   position: relative;
   width: 100%;
@@ -73,5 +75,23 @@
 
   & span {
     padding: $gap-l;
+  }
+}
+
+.modal__header {
+  position: relative;
+}
+
+.modal__status {
+  display: none;
+  position: absolute;
+  right: $gap-l;
+  top: 0;
+  font-size: 37px;
+  font-weight: 700;
+  @media #{$breakpointTablet} {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
   }
 }

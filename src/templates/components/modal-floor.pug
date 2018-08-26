@@ -1,8 +1,17 @@
 section.modal__wrp
   div.modal
     div.modal__inner
-      h2.modal__title.heading.heading--l Xiaomi Warm Floor
-      p.modal__text.text Включено
+      header.modal__header
+        h2.modal__title.heading.heading--l Xiaomi Warm Floor
+        p.modal__text.text Включено
+        div.modal__status
+          span.modal__status-text +23
+          span.icon.modal__status-icon
+            svg(width="40px" height="40px")
+              use(xlink:href="img/icons.svg#temperature_2")
+
+
+
       div.modal__content.diagram
         div.diagram__circle
           p.diagram__text

@@ -7,86 +7,86 @@ html(lang="ru")
   meta(name="description" content="")
   link(rel="stylesheet" href="css/main.css")
 
-  body
+  body.grid
     include components/header
-    main
-      section.welcome.section
+    main.grid__main
+      section.welcome.grid__welcome.section.section--rightspace
+        h2.heading.heading--l.hide-mobile Главное
         div.welcome__inner
-          h2.heading.heading--l Привет,&nbsp;
-            span.welcome__user Геннадий!
-          p.text.text--dark Двери и&nbsp;окна закрыты, сигнализация включена.
-          div.forecast
-            div.forecast__block
-              p.forecast__location.text.text--light Дома
-              p.forecast__text
-                span +23
-            div.forecast__block
-              p.forecast__location.text.text--light За окном
-              p.forecast__text.forecast__text--rain
-                span  +19
-                span.icon.forecast__icon
-                  svg(width="20px" height="20px")
-                    use(xlink:href="img/icons.svg#cloud")
-          div.slider.slider--m
-            div.slider__block
+          div.welcome__block
+            h2.welcome__heading Привет,&nbsp;
+              span.welcome__user Геннадий!
+            p.text.text--dark Двери и&nbsp;окна закрыты, сигнализация включена.
+            div.forecast
+              div.forecast__block
+                p.forecast__location.text.text--light Дома
+                p.forecast__text
+                  span +23
+              div.forecast__block
+                p.forecast__location.text.text--light За окном
+                p.forecast__text.forecast__text--rain
+                  span  +19
+                  span.icon.forecast__icon
+                    svg(width="20px" height="20px")
+                      use(xlink:href="img/icons.svg#cloud")
+          div.slider.slider--m.slider--to-vertical.slider--card-btn
+            div.slider__block.slider__block--to-vertical.slider__block--m
               div.slider__inner.slider__inner--temp-off
                 p.slider__heading.heading.heading--m Philips Cooler
                 p.text.text--light Начнет охлаждать в&nbsp;16:30
-            div.slider__block
+            div.slider__block.slider__block--to-vertical.slider__block--m
               div.slider__inner.slider__inner--light-off
                 p.slider__heading.heading.heading--m Xiaomi Yeelight LED Smart Bulb
                 p.text.text--light Включится в&nbsp;17:00
-            div.slider__block
+            div.slider__block.slider__block--to-vertical.slider__block--m
               div.slider__inner.slider__inner--temp-off
                 p.slider__heading.heading.heading--m Elgato Eve Degree Connected
                 p.text.text--light Выключено до&nbsp;17:00
-            div.slider__block
+            div.slider__block.slider__block--to-vertical.slider__block--m
               div.slider__inner.slider__inner--light-off
                 p.slider__heading.heading.heading--m LIFX Mini Day & Dusk A60 E27
                 p.text.text--light Включится в&nbsp;17:00
-            div.slider__block
+            div.slider__block.slider__block--to-vertical.slider__block--m
               div.slider__inner.slider__inner--light-on
                 p.slider__heading.heading.heading--m Xiaomi Mi Air Purifier 2S
                 p.text.text--light Включено
 
-      section.scenarios
+      section.scenarios.grid__scenarios
         div.section
           h2.heading.heading--l Избранные сценарии
-          div.slider.slider--s
-            div.slider__block
+          div.slider
+            div.slider__block.slider__block--s
               div.slider__inner.slider__inner--light-on
                 p.slider__heading.heading.heading--m Выключить весь свет в&nbsp;доме и&nbsp;во&nbsp;дворе
-            div.slider__block
+            div.slider__block.slider__block--s
               div.slider__inner.slider__inner--clocks
                 p.slider__heading.heading.heading--m Я ухожу
 
-      section.favorite
+      section.favorite.grid__favorite
         div.section
           div.section__header
             h2.heading.heading--l Избранные устройства
             div.dropdown
-              a.dropdown__btn(href="#")
-                span.dropdown__active Все
-                span.icon.dropdown__icon
-                  svg(width="16px" height="10px")
-                    use(xlink:href="img/icons.svg#arrow-down")
-          div.slider.slider--m
-            div.slider__block.block.block--gray
+              a.dropdown__link.dropdown__link--active(href="#") Все
+              a.dropdown__link(href="#") Кухня
+              a.dropdown__link(href="#") Зал
+              a.dropdown__link(href="#") Лампочки
+              a.dropdown__link(href="#") Камеры
+          div.slider
+            div.slider__block.slider__block--m
               div.slider__inner.slider__inner--light-on
                 p.slider__heading.heading.heading--m Xiaomi Yeelight LED Smart Bulb
                 p.text.text--gray Включено
-            div.slider__block.block.block--gray
+            div.slider__block.slider__block--m
               div.slider__inner.slider__inner--light-off
                 p.slider__heading.heading.heading--m D-Link Omna 180 Cam
                 p.text.text--gray Включится в 17:00
-            div.slider__block.block.block--gray
+            div.slider__block.slider__block--m
               div.slider__inner.slider__inner--light-off
                 p.slider__heading.heading.heading--m D-Link Omna 180 Cam
                 p.text.text--gray Включится в 17:00
 
     include components/footer
-
-    include components/modal-light
 
     script(src="js/bundle.js")
 

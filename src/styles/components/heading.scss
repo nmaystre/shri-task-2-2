@@ -2,9 +2,13 @@
   color: $gray-dark;
   font-weight: 700;
 
+  &--xl {
+    font-size: 37px;
+  }
+
   &--l {
     font-size: 18px;
-    margin: 5px 0;
+    margin: 5px 0 $gap-l;
   }
 
   &--m {

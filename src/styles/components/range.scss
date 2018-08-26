@@ -35,6 +35,9 @@ $range-width: 60px;
 
   &--rainbow {
     background-image: linear-gradient($accent-orange 0%, $accent-yellow 50%, $accent-blue 100%);
+    @media #{$breakpointTablet} {
+      background-image: linear-gradient(-90deg, $accent-orange 0%, $accent-yellow 50%, $accent-blue 100%);
+    }
   }
 
   &--primary {
@@ -56,6 +59,7 @@ $range-width: 60px;
   border-radius: 50%;
   border: 3px solid rgba(51,51,51,0.10);
   box-shadow: 0 0 0 4px $white;
+  cursor: pointer;
 
   @media #{$breakpointTablet} {
     left: 40%;
