@@ -1,10 +1,8 @@
 .section {
   min-width: 320px;
   width: 100%;
-  //padding-left: $gap-l;
   box-sizing: border-box;
   margin: 0 0 $gap-xl;
-  //overflow-x: hidden;
 
   @media #{$breakpointDesktop} {
     max-width: inherit;

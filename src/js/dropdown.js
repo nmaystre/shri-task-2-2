@@ -5,7 +5,7 @@ const dropdownItem = dropdownMenu.querySelectorAll(".dropdown__link");
 let dropdownOpen = false;
 
 for (let i = 0; i < dropdownItem.length; i++) {
-  dropdownItem[i].addEventListener("click", function(e) {
+  dropdownItem[i].addEventListener("click", function (e) {
     e.preventDefault();
     e.stopPropagation();
     if (window.matchMedia("(max-width: 767px)").matches) {
@@ -22,7 +22,7 @@ for (let i = 0; i < dropdownItem.length; i++) {
         dropdownOpen = false;
 
         // закрыть по клику вне дропа
-        document.addEventListener("click", function(e) {
+        document.addEventListener("click", function (e) {
           dropdownMenu.classList.remove("dropdown--expanded");
           dropdownOpen = false;
         });

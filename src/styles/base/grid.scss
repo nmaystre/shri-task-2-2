@@ -38,7 +38,6 @@
       grid-gap: $gap-l;
       justify-content: center;
       grid-template-columns: 1fr 1fr;
-      //grid-template-columns: repeat(2, minmax(300px, 670px));
       grid-template-rows: auto;
       grid-template-areas: "welcome scenarios" "favorite favorite";
     }

@@ -46,7 +46,7 @@ $range-width: 336px;
     background-image: linear-gradient(90deg, $yellow-dark 0%, $yellow-light 100%);
   }
 
-  &:focus,&:hover,&:active {
+  &:focus, &:hover, &:active {
     @include box-shadow;
   }
 }
@@ -64,10 +64,11 @@ $range-width: 336px;
   cursor: pointer;
   transition: all 0.15s linear;
 
-  &:focus,&:hover,&:active {
+  &:focus, &:hover, &:active {
     @include box-shadow;
   }
 }
+
 .range__bar::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
