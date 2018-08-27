@@ -14,7 +14,8 @@ html(lang='ru')
     include components/header
     main.grid__main
       section.welcome.grid__welcome.section.section--rightspace
-        h2.heading.heading--l.hide-mobile Главное
+        div.section__header
+          h2.heading.heading--l.hide-mobile Главное
         div.welcome__inner
           div.welcome__block
             h2.welcome__heading Привет,&nbsp;
@@ -66,7 +67,7 @@ html(lang='ru')
               a.dropdown__link(href='#') Зал
               a.dropdown__link(href='#') Лампочки
               a.dropdown__link(href='#') Камеры
-          div.slider
+          div.slider.slider--to-line
             +slider-card-m('temperature', 'Philips Cooler', 'Начнет охлаждать в 16:30')
             +slider-card-m('sun', 'Xiaomi Yeelight LED Smart Bulb', 'Включится в 17:00')
             +slider-card-m('temperature', 'Elgato Eve Degree Connected', 'Выключено до 17:00')
@@ -76,8 +77,6 @@ html(lang='ru')
             +slider-card-m('sun_2', 'Xiaomi Mi Air Purifier 2S', 'Включено')
 
   include components/footer
-  include components/modal-light
-
-
-    script(src='js/bundle.js')
+  include components/modal-temp
+  script(src='js/bundle.js')
 

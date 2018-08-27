@@ -25,7 +25,6 @@ for (let i = 0; i < dropdownItem.length; i++) {
         document.addEventListener("click", function(e) {
           dropdownMenu.classList.remove("dropdown--expanded");
           dropdownOpen = false;
-
         });
       }
     } else {

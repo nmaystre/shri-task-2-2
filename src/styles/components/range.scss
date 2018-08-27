@@ -1,5 +1,5 @@
-$range-height: 336px;
-$range-width: 60px;
+$range-height: 60px;
+$range-width: 336px;
 
 .range {
   display: flex;
@@ -8,15 +8,16 @@ $range-width: 60px;
 }
 
 .range__content {
-  margin: auto;
-  min-height: $range-height;
-  padding: 25px 0 5px;
+  position: relative;
+  margin: 25px auto 5px;
+  padding: 0;
+  min-height: $range-width;
   box-sizing: content-box;
   display: flex;
   flex-grow: 1;
   @media #{$breakpointTablet} {
-    min-height: inherit;
-    width: 100%;
+    min-height: 100%;
+    width: auto;
   }
 }
 
@@ -26,49 +27,56 @@ $range-width: 60px;
   width: $range-width;
   height: $range-height;
   border-radius: 35px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  transform: rotate(90deg);
+  outline: none;
+  transition: all 0.15s linear;
 
   @media #{$breakpointTablet} {
-    width: 100%;
-    height: $range-width;
-    margin: 0 $gap-l;
+    transform: rotate(0deg);
   }
 
   &--rainbow {
-    background-image: linear-gradient($accent-orange 0%, $accent-yellow 50%, $accent-blue 100%);
-    @media #{$breakpointTablet} {
-      background-image: linear-gradient(-90deg, $accent-orange 0%, $accent-yellow 50%, $accent-blue 100%);
-    }
+    background-image: linear-gradient(-90deg, $accent-orange 0%, $accent-yellow 50%, $accent-blue 100%);
   }
 
   &--primary {
-    background-image: linear-gradient($yellow-dark 0%, $yellow-light 100%);
-    @media #{$breakpointTablet} {
-      background-image: linear-gradient(-90deg, $yellow-dark 0%, $yellow-light 100%);
-    }
+    background-image: linear-gradient(90deg, $yellow-dark 0%, $yellow-light 100%);
+  }
+
+  &:focus,&:hover,&:active {
+    @include box-shadow;
   }
 }
 
-.range__btn {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 40%;
+.range__bar::-webkit-slider-thumb,
+.range__bar::-moz-range-thumb,
+.range__bar::-ms-thumb {
+  -webkit-appearance: none;
+  appearance: none;
   width: 60px;
   height: 60px;
-  margin-top: -30px;
   border-radius: 50%;
   border: 3px solid rgba(51, 51, 51, 0.10);
   box-shadow: 0 0 0 4px $white;
   cursor: pointer;
+  transition: all 0.15s linear;
 
-  @media #{$breakpointTablet} {
-    left: 40%;
-    right: inherit;
-    top: 0;
-    bottom: 0;
-    margin-top: 0;
-    margin-left: -30px;
+  &:focus,&:hover,&:active {
+    @include box-shadow;
   }
+}
+.range__bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid rgba(51, 51, 51, 0.10);
+  box-shadow: 0 0 0 4px $white;
+  cursor: pointer;
 }
 
 .range__caption {

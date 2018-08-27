@@ -4,6 +4,12 @@
   margin: -2px;
   padding: 2px;
 
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   &--to-vertical {
     @media #{$breakpointDesktop} {
       flex-direction: column;
@@ -30,6 +36,12 @@
   &--to-grid .slider__block {
     @media #{$breakpointDesktop} {
       margin: 0;
+    }
+  }
+
+  &--to-line {
+    @media #{$breakpointDesktop} {
+      padding-left: $gap-l;
     }
   }
 }
@@ -77,8 +89,11 @@
 .slider__controls {
   margin-left: auto;
   width: 50px;
-  display: flex;
+  display: none;
   justify-content: space-between;
+  @media #{$breakpointDesktop} {
+    display: flex;
+  }
 }
 
 .slider__control {

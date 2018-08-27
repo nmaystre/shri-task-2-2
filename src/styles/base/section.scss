@@ -28,6 +28,9 @@
   &--lp {
     @media #{$breakpointDesktop} {
       padding-left: 40px;
+      padding-left: 40px;
+      max-width: 1366px;
+      margin: auto;
     }
   }
 }

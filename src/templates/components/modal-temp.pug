@@ -20,12 +20,12 @@ section.modal__wrp
             li.filters__item
               a.filters__link(href='#') Жарко
         div.range__content
-          div.range__bar.range__bar--rainbow
-            div.range__caption.range__caption--max
-              span.range__text +30
-            div.range__caption.range__caption--min
-              span.range__text –10
-            div.range__btn
+          input(type='range').range__bar.range__bar--rainbow
+          div.range__caption.range__caption--max
+            span.range__text +30
+          div.range__caption.range__caption--min
+            span.range__text –10
+          div.range__btn
     a.btn.btn--primary.modal__btn(href='#')
       span Применить
     a.btn.btn--light.modal__btn(href='#')

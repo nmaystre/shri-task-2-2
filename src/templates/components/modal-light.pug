@@ -21,12 +21,12 @@ section.modal__wrp
             li.filters__item
               a.filters__link(href='#') Рассвет
         div.range__content
-          div.range__bar.range__bar--primary
-            div.range__caption.range__caption--max
-              + svg('sun_max', '36', '36')
-            div.range__caption.range__caption--min
-              + svg('sun_min', '36', '36')
-            div.range__btn
+          input(type='range').range__bar.range__bar--primary
+          div.range__caption.range__caption--max
+            + svg('sun_max', '36', '36')
+          div.range__caption.range__caption--min
+            + svg('sun_min', '36', '36')
+          div.range__btn
 
     a.btn.btn--primary-darken.modal__btn(href='#')
       span Применить
