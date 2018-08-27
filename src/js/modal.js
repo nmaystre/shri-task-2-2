@@ -1,38 +1,39 @@
-// var body = document.querySelectorAll("body"),
-//     modalOpenBtn = document.querySelectorAll(".modal__open");
-//     modalBody = document.querySelectorAll(".modal");
-//
-// for (var i=0; i <= modalOpen.length; i++) {
-//   modalOpenBtn.onclick(function (evt) {
-//     evt.preventDefault();
-//     console.log('open please!');
-//   });
-// }
+const sliderBlock = document.querySelectorAll('.slider__inner');
 
+for (let i = 0; i < sliderBlock.length; i++) {
+  sliderBlock[i].addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    let closestBlock = e.target.closest('.slider__block');
+    let closestModal = closestBlock.querySelector('.modal__wrp');
+    closestModal.classList.add('modal__wrp--open');
 
-// $(document).ready(function () {
-//   var $window = $(window);
-//
-//   // menu
-//
-//   var $menuBtn = $('.hamburger');
-//   var $menuIcon = $('.hamburger__icon');
-//   var $menu = $('.menu');
-//   var $body = $('body');
-//   var $menuMobileBtn = $('.js-menu__close');
-//
-//   $menuBtn.click(function (evt) {
-//     evt.preventDefault();
-//     $menu.toggleClass("open");
-//     $menuIcon.toggleClass("open");
-//     $body.toggleClass("menu-open");
-//   });
-//
-//   if ($window.width() < 1239) {
-//     $menuMobileBtn.click(function (evt) {
-//       evt.preventDefault();
-//       $menu.toggleClass("open");
-//       $menuIcon.toggleClass("open");
-//       $body.toggleClass("menu-open");
-//     });
-//   }
+    const modalBg = closestModal.querySelector('.modal__bg');
+    const modalBnts = closestModal.querySelectorAll('.modal__btn');
+
+    modalBg.addEventListener("click", function (e) {
+      e.preventDefault();
+      closestModal.classList.remove('modal__wrp--open');
+    });
+
+    for (let j = 0; j < modalBnts.length; j++) {
+      modalBnts[j].addEventListener("click", function (e) {
+        e.preventDefault();
+        closestModal.classList.remove('modal__wrp--open');
+      });
+      modalBnts[j].addEventListener("submit", function (e) {
+        e.preventDefault();
+        closestModal.classList.remove('modal__wrp--open');
+      });
+    }
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (closestModal.classList.contains("modal__wrp--open")) {
+          closestModal.classList.remove('modal__wrp--open');
+        }
+      }
+    });
+  });
+}

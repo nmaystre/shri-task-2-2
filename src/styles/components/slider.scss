@@ -47,10 +47,10 @@
 }
 
 .slider__block {
+  position: relative;
   margin-left: $gap-l;
   background-color: $gray-lightest;
   border-radius: 20px;
-  padding: $gap-m;
   width: 200px;
   flex-shrink: 0;
   display: flex;
@@ -72,6 +72,7 @@
 }
 
 .slider__inner {
+  padding: $gap-m;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -80,8 +81,8 @@
 
 .slider__icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 15px;
+  left: 15px;
   width: 24px;
   height: 24px;
 }

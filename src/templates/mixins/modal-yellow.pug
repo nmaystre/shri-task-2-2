@@ -1,0 +1,35 @@
+include svg
+
+mixin modal-yellow(itemName, itemDetail)
+  section.modal__wrp
+    div.modal__bg
+    div.modal
+      div.modal__inner
+        header.modal__header
+          h2.modal__title.heading.heading--l #{itemName}
+          p.modal__text.text #{itemDetail}
+          div.modal__status
+            span.icon.modal__status-icon
+              + svg('sun', '40', '40')
+        div.modal__content.range
+          div.filters
+            ul.filters__list
+              li.filters__item
+                a.filters__link.filters__link--on(href='#') Вручную
+              li.filters__item
+                a.filters__link(href='#') Дневной свет
+              li.filters__item
+                a.filters__link(href='#') Вечерний свет
+              li.filters__item
+                a.filters__link(href='#') Рассвет
+          div.range__content
+            input(type='range').range__bar.range__bar--primary
+            div.range__caption.range__caption--max
+              + svg('sun_max', '36', '36')
+            div.range__caption.range__caption--min
+              + svg('sun_min', '36', '36')
+            div.range__btn
+      a.btn.btn--primary-darken.modal__btn(href='#')
+        span Применить
+      a.btn.btn--light.modal__btn(href='#')
+        span Закрыть

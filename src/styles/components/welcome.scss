@@ -1,11 +1,9 @@
 .welcome {
-  //padding: 0 $gap-l;
 }
 
 .welcome__inner {
-  //background-color: $gray-light;
   border-radius: 20px;
-  //padding: 20px 0 20px 20px;
+  margin: 0 20px;
   overflow: hidden;
   background-image: url(../img/welcome-bg@1x.png);
   background-position: 40% 0%;
@@ -20,6 +18,7 @@
   }
 
   @media #{$breakpointDesktop} {
+    margin: 0;
     display: flex;
     justify-content: space-between;
     padding-right: $gap-l;

@@ -1,0 +1,22 @@
+include svg
+
+mixin modal-circle(itemName, itemDetail)
+  section.modal__wrp
+    div.modal__bg
+    div.modal
+      div.modal__inner
+        header.modal__header
+          h2.modal__title.heading.heading--l #{itemName}
+          p.modal__text.text #{itemDetail}
+          div.modal__status
+            span.modal__status-text +23
+            span.icon.modal__status-icon
+              + svg('temperature_2', '40', '40')
+        div.modal__content.diagram
+          div.diagram__circle
+            p.diagram__text
+              span.diagram__temp +23
+      a.btn.btn--primary.modal__btn
+        span Применить
+      a.btn.btn--light.modal__btn
+        span Закрыть

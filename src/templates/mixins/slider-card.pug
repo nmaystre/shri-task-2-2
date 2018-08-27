@@ -1,26 +1,40 @@
-mixin slider-card-vert(itemIcon, itemName, itemDetail)
-  div.slider__block.slider__block--to-vertical.slider__block--m
-    div.slider__inner
-      span.slider__icon
-        svg(width='24px' height='24px')
-          use(xlink:href=`img/icons.svg#${itemIcon}`)
-      p.slider__heading.heading.heading--m #{itemName}
-      p.text.text--light #{itemDetail}
+include modal-yellow
+include modal-rainbow
+include modal-circle
+
+mixin slider-card-temp(itemIcon, itemName, itemDetail)
+  div.slider__inner
+    span.slider__icon
+      svg(width='24px' height='24px')
+        use(xlink:href=`img/icons.svg#${itemIcon}`)
+    p.slider__heading.heading.heading--m #{itemName}
+    p.text.text--light #{itemDetail}
+  + modal-rainbow(itemName, itemDetail)
+
+
+mixin slider-card-light(itemIcon, itemName, itemDetail)
+  div.slider__inner
+    span.slider__icon
+      svg(width='24px' height='24px')
+        use(xlink:href=`img/icons.svg#${itemIcon}`)
+    p.slider__heading.heading.heading--m #{itemName}
+    p.text.text--light #{itemDetail}
+  + modal-yellow(itemName, itemDetail)
+
+mixin slider-card-floor(itemIcon, itemName, itemDetail)
+  div.slider__inner
+    span.slider__icon
+      svg(width='24px' height='24px')
+        use(xlink:href=`img/icons.svg#${itemIcon}`)
+    p.slider__heading.heading.heading--m #{itemName}
+    p.text.text--light #{itemDetail}
+  + modal-circle(itemName, itemDetail)
 
 mixin slider-card-s(itemIcon, itemName, itemDetail)
-  div.slider__block.slider__block--s
-    div.slider__inner
-      span.slider__icon
-        svg(width='24px' height='24px')
-          use(xlink:href=`img/icons.svg#${itemIcon}`)
-      p.slider__heading.heading.heading--m #{itemName}
-      p.text.text--light #{itemDetail}
+  div.slider__inner
+    span.slider__icon
+      svg(width='24px' height='24px')
+        use(xlink:href=`img/icons.svg#${itemIcon}`)
+    p.slider__heading.heading.heading--m #{itemName}
+    p.text.text--light #{itemDetail}
 
-mixin slider-card-m(itemIcon, itemName, itemDetail)
-  div.slider__block.slider__block--m
-    div.slider__inner
-      span.slider__icon
-        svg(width='24px' height='24px')
-          use(xlink:href=`img/icons.svg#${itemIcon}`)
-      p.slider__heading.heading.heading--m #{itemName}
-      p.text.text--light #{itemDetail}
