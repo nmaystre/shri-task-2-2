@@ -1,11 +1,14 @@
 doctype html
-html(lang="ru")
+html(lang='ru')
   head
-  meta(charset="UTF-8")
-  meta(name="viewport" content="width=device-width, initial-scale=1")
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
   title
-  meta(name="description" content="")
-  link(rel="stylesheet" href="css/main.css")
+  meta(name='description' content='')
+  link(rel='stylesheet' href='css/main.css')
+
+  include mixins/slider-card
+  include mixins/svg
 
   body.grid
     include components/header
@@ -26,67 +29,55 @@ html(lang="ru")
                 p.forecast__location.text.text--light За окном
                 p.forecast__text.forecast__text--rain
                   span  +19
-                  span.icon.forecast__icon
-                    svg(width="20px" height="20px")
-                      use(xlink:href="img/icons.svg#cloud")
-          div.slider.slider--m.slider--to-vertical.slider--card-btn
-            div.slider__block.slider__block--to-vertical.slider__block--m
-              div.slider__inner.slider__inner--temp-off
-                p.slider__heading.heading.heading--m Philips Cooler
-                p.text.text--light Начнет охлаждать в&nbsp;16:30
-            div.slider__block.slider__block--to-vertical.slider__block--m
-              div.slider__inner.slider__inner--light-off
-                p.slider__heading.heading.heading--m Xiaomi Yeelight LED Smart Bulb
-                p.text.text--light Включится в&nbsp;17:00
-            div.slider__block.slider__block--to-vertical.slider__block--m
-              div.slider__inner.slider__inner--temp-off
-                p.slider__heading.heading.heading--m Elgato Eve Degree Connected
-                p.text.text--light Выключено до&nbsp;17:00
-            div.slider__block.slider__block--to-vertical.slider__block--m
-              div.slider__inner.slider__inner--light-off
-                p.slider__heading.heading.heading--m LIFX Mini Day & Dusk A60 E27
-                p.text.text--light Включится в&nbsp;17:00
-            div.slider__block.slider__block--to-vertical.slider__block--m
-              div.slider__inner.slider__inner--light-on
-                p.slider__heading.heading.heading--m Xiaomi Mi Air Purifier 2S
-                p.text.text--light Включено
-
+                  span.forecast__icon
+                    + svg('cloud', '20', '20')
+          div.welcome__slider
+            div.slider.slider--m.slider--to-vertical
+              +slider-card-vert('temperature', 'Philips Cooler', 'Начнет охлаждать в 16:30')
+              +slider-card-vert('sun', 'Xiaomi Yeelight LED Smart Bulb', 'Включится в 17:00')
+              +slider-card-vert('temperature', 'Elgato Eve Degree Connected', 'Выключено до 17:00')
+              +slider-card-vert('sun', 'LIFX Mini Day & Dusk A60 E27', 'Включится в&nbsp;17:00')
+              +slider-card-vert('sun_2', 'Xiaomi Mi Air Purifier 2S', 'Включено')
+              a.slider__card-bth(href='#')
+                + svg('arrow-double', '16', '16')
       section.scenarios.grid__scenarios
         div.section
-          h2.heading.heading--l Избранные сценарии
-          div.slider
-            div.slider__block.slider__block--s
-              div.slider__inner.slider__inner--light-on
-                p.slider__heading.heading.heading--m Выключить весь свет в&nbsp;доме и&nbsp;во&nbsp;дворе
-            div.slider__block.slider__block--s
-              div.slider__inner.slider__inner--clocks
-                p.slider__heading.heading.heading--m Я ухожу
+          div.section__header
+            h2.heading.heading--l Избранные сценарии
+            div.slider__controls
+              a.slider__control.slider__control--l(href='#')
+                + svg('arrow-left', '12', '14')
+              a.slider__control.slider__control--r(href='#')
+                + svg('arrow-left', '12', '14')
+          div.slider.slider--to-grid
+            +slider-card-s('sun_2', 'Выключить весь свет в доме и во дворе')
+            +slider-card-s('scheduled', 'Я ухожу')
+            +slider-card-s('sun_2', 'Включить свет в коридоре')
+            +slider-card-s('temperature_2', 'Набрать горячую ванну', 'Начнётся в 18:00')
+            +slider-card-s('temperature_2', 'Сделать пол тёплым во всей квартире')
 
       section.favorite.grid__favorite
         div.section
-          div.section__header
+          div.section__header.section__header--lp
             h2.heading.heading--l Избранные устройства
             div.dropdown
-              a.dropdown__link.dropdown__link--active(href="#") Все
-              a.dropdown__link(href="#") Кухня
-              a.dropdown__link(href="#") Зал
-              a.dropdown__link(href="#") Лампочки
-              a.dropdown__link(href="#") Камеры
+              a.dropdown__link.dropdown__link--active(href='#') Все
+              a.dropdown__link(href='#') Кухня
+              a.dropdown__link(href='#') Зал
+              a.dropdown__link(href='#') Лампочки
+              a.dropdown__link(href='#') Камеры
           div.slider
-            div.slider__block.slider__block--m
-              div.slider__inner.slider__inner--light-on
-                p.slider__heading.heading.heading--m Xiaomi Yeelight LED Smart Bulb
-                p.text.text--gray Включено
-            div.slider__block.slider__block--m
-              div.slider__inner.slider__inner--light-off
-                p.slider__heading.heading.heading--m D-Link Omna 180 Cam
-                p.text.text--gray Включится в 17:00
-            div.slider__block.slider__block--m
-              div.slider__inner.slider__inner--light-off
-                p.slider__heading.heading.heading--m D-Link Omna 180 Cam
-                p.text.text--gray Включится в 17:00
+            +slider-card-m('temperature', 'Philips Cooler', 'Начнет охлаждать в 16:30')
+            +slider-card-m('sun', 'Xiaomi Yeelight LED Smart Bulb', 'Включится в 17:00')
+            +slider-card-m('temperature', 'Elgato Eve Degree Connected', 'Выключено до 17:00')
+            +slider-card-m('sun', 'LIFX Mini Day & Dusk A60 E27', 'Включится в 17:00')
+            +slider-card-m('sun', 'Xiaomi Mi Air Purifier 2S', 'Выключено')
+            +slider-card-m('sun_2', 'Xiaomi Mi Air Purifier 2S', 'Включено')
+            +slider-card-m('sun_2', 'Xiaomi Mi Air Purifier 2S', 'Включено')
 
-    include components/footer
+  include components/footer
+  include components/modal-light
 
-    script(src="js/bundle.js")
+
+    script(src='js/bundle.js')
 

@@ -7,31 +7,28 @@ section.modal__wrp
           span 17:00
         div.modal__status
           span.icon.modal__status-icon
-            svg(width="40px" height="40px")
-              use(xlink:href="img/icons.svg#sun")
+            + svg('sun', '40', '40')
 
       div.modal__content.range
         div.filters
           ul.filters__list
             li.filters__item
-              a.filters__link.filters__link--on(href="#") Вручную
+              a.filters__link.filters__link--on(href='#') Вручную
             li.filters__item
-              a.filters__link(href="#") Дневной свет
+              a.filters__link(href='#') Дневной свет
             li.filters__item
-              a.filters__link(href="#") Вечерний свет
+              a.filters__link(href='#') Вечерний свет
             li.filters__item
-              a.filters__link(href="#") Рассвет
+              a.filters__link(href='#') Рассвет
         div.range__content
           div.range__bar.range__bar--primary
             div.range__caption.range__caption--max
-              svg(width="36px" height="36px")
-                use(xlink:href="img/icons.svg#sun_max")
+              + svg('sun_max', '36', '36')
             div.range__caption.range__caption--min
-              svg(width="36px" height="36px")
-                use(xlink:href="img/icons.svg#sun_min")
+              + svg('sun_min', '36', '36')
             div.range__btn
 
-    a.btn.btn--primary--darken.modal__btn(href="#")
+    a.btn.btn--primary-darken.modal__btn(href='#')
       span Применить
-    a.btn.btn--light.modal__btn(href="#")
+    a.btn.btn--light.modal__btn(href='#')
       span Закрыть

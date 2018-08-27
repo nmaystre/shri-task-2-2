@@ -1,0 +1,26 @@
+mixin slider-card-vert(itemIcon, itemName, itemDetail)
+  div.slider__block.slider__block--to-vertical.slider__block--m
+    div.slider__inner
+      span.slider__icon
+        svg(width='24px' height='24px')
+          use(xlink:href=`img/icons.svg#${itemIcon}`)
+      p.slider__heading.heading.heading--m #{itemName}
+      p.text.text--light #{itemDetail}
+
+mixin slider-card-s(itemIcon, itemName, itemDetail)
+  div.slider__block.slider__block--s
+    div.slider__inner
+      span.slider__icon
+        svg(width='24px' height='24px')
+          use(xlink:href=`img/icons.svg#${itemIcon}`)
+      p.slider__heading.heading.heading--m #{itemName}
+      p.text.text--light #{itemDetail}
+
+mixin slider-card-m(itemIcon, itemName, itemDetail)
+  div.slider__block.slider__block--m
+    div.slider__inner
+      span.slider__icon
+        svg(width='24px' height='24px')
+          use(xlink:href=`img/icons.svg#${itemIcon}`)
+      p.slider__heading.heading.heading--m #{itemName}
+      p.text.text--light #{itemDetail}

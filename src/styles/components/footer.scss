@@ -11,15 +11,19 @@
   padding-right: $gap-l;
   box-sizing: border-box;
   margin: 0 0 $gap-xl;
+
   @media #{$breakpointTablet} {
     height: 100%;
     max-width: 1366px;
     width: 100%;
     margin: auto;
-    padding: 0 $gap-xxl;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media #{$breakpointDesktop} {
+    padding: 0 $gap-xxl;
   }
 }
 

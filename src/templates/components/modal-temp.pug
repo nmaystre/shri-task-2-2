@@ -7,19 +7,18 @@ section.modal__wrp
         div.modal__status
           span.modal__status-text +23
           span.icon.modal__status-icon
-            svg(width="40px" height="40px")
-              use(xlink:href="img/icons.svg#temperature_2")
+            + svg('temperature_2', '40', '40')
       div.modal__content.range
         div.filters
           ul.filters__list
             li.filters__item
-              a.filters__link.filters__link--on(href="#") Вручную
+              a.filters__link.filters__link--on(href='#') Вручную
             li.filters__item
-              a.filters__link(href="#") Холодно
+              a.filters__link(href='#') Холодно
             li.filters__item
-              a.filters__link(href="#") Тепло
+              a.filters__link(href='#') Тепло
             li.filters__item
-              a.filters__link(href="#") Жарко
+              a.filters__link(href='#') Жарко
         div.range__content
           div.range__bar.range__bar--rainbow
             div.range__caption.range__caption--max
@@ -27,7 +26,7 @@ section.modal__wrp
             div.range__caption.range__caption--min
               span.range__text –10
             div.range__btn
-    a.btn.btn--primary.modal__btn(href="#")
+    a.btn.btn--primary.modal__btn(href='#')
       span Применить
-    a.btn.btn--light.modal__btn(href="#")
+    a.btn.btn--light.modal__btn(href='#')
       span Закрыть

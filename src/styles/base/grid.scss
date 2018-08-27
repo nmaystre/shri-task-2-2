@@ -6,7 +6,7 @@
   @supports (display: grid) {
     display: grid;
     grid-gap: $gap-m 0;
-    grid-template-rows: auto;
+    grid-template-rows: [hd] 60px [main] auto [ft] 60px;
     grid-template-columns: minmax(320px, auto);
     grid-template-areas: "hd" "main" "ft";
   }
@@ -22,28 +22,22 @@
 }
 
 .grid__header {
-  @supports (display: grid) {
-    grid-area: hd;
-  }
+  grid-area: hd;
 }
 
 .grid__main {
-  @supports (display: grid) {
-    grid-area: main;
-  }
+  grid-area: main;
 
   @media #{$breakpointDesktop} {
-    display: flex;
-    flex-direction: column;
-    max-width: 1366px;
     width: 100%;
     margin: 0 auto auto;
-    padding: $gap-l $gap-xxl 0;
+    padding: $gap-l 0 0;
 
     @supports (display: grid) {
       display: grid;
       grid-gap: $gap-l;
-      grid-template-columns: 50% 1fr;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
       grid-template-areas: "welcome scenarios" "favorite favorite";
     }
@@ -51,28 +45,32 @@
 }
 
 .grid__footer {
-  @supports (display: grid) {
-    grid-area: ft;
-  }
+  grid-area: ft;
+  justify-self: flex-end;
+  width: 100%;
 }
 
 .grid__welcome {
-  @supports (display: grid) {
-    grid-area: welcome;
+  grid-area: welcome;
+
+  @media #{$breakpointDesktop} {
+    padding-left: $gap-xxl;
   }
 }
 
 .grid__scenarios {
-   @supports (display: grid) {
-     grid-area: scenarios;
-   }
- }
+  grid-area: scenarios;
+
+  @media #{$breakpointDesktop} {
+    padding-right: $gap-xxl;
+  }
+}
 
 .grid__favorite {
-  @supports (display: grid) {
-    grid-area: favorite;
-  }
+  grid-area: favorite;
+
   @media #{$breakpointDesktop} {
-    margin-right: -$gap-xxl;
+    width: 100%;
+    overflow: hidden;
   }
 }

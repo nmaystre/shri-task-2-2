@@ -1,49 +1,41 @@
 .slider {
   display: flex;
-  overflow-x: hidden;
+  overflow: scroll;
   margin: -2px;
   padding: 2px;
 
-  @supports (display: grid) {
-    display: grid;
-    grid-gap: $gap-m;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-  }
-
-  &--card-btn {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0px;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 40px;
-      background: #F7F7F7;
-      border-radius: 20px 20px 0 0;
-      display: none;
-      z-index: 1;
-      background-image: url("../img/icons/arrow-double.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      @media #{$breakpointDesktop} {
-        display: block;
-      }
+  &--to-vertical {
+    @media #{$breakpointDesktop} {
+      flex-direction: column;
+      height: 100%;
+      margin: 0;
     }
   }
 
-  &--to-vertical {
-     @media #{$breakpointDesktop} {
-       flex-direction: column;
+  &--to-vertical .slider__block {
+    @media #{$breakpointDesktop} {
+      margin-left: 0;
+      margin-top: $gap-m;
+    }
+  }
 
-     }
-   }
+  &--to-grid {
+    @media #{$breakpointDesktop} {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 200px);
+      grid-gap: 15px;
+    }
+  }
+
+  &--to-grid .slider__block {
+    @media #{$breakpointDesktop} {
+      margin: 0;
+    }
+  }
 }
 
 .slider__block {
+  margin-left: $gap-l;
   background-color: $gray-lightest;
   border-radius: 20px;
   padding: $gap-m;
@@ -65,20 +57,6 @@
   &--m {
     min-height: 120px;
   }
-
-  //& + & {
-  //  margin-left: $gap-l;
-  //}
-
-  //&--to-vertical {
-  //
-  //  @media #{$breakpointDesktop} {
-  //    & + & {
-  //      margin-left: 0;
-  //      margin-top: $gap-m;
-  //    }
-  //  }
-  //}
 }
 
 .slider__inner {
@@ -86,20 +64,70 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
 
-  &--temp-off::before {
-    @include decorated-icon(url(../img/icons/temperature.svg));
+.slider__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.slider__controls {
+  margin-left: auto;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__control {
+  transition: all 0.1s linear;
+
+  & svg {
+    fill: $gray;
+    transition: all 0.1s linear;
   }
-  &--temp-on::before {
-    @include decorated-icon(url(../img/icons/temperature_2.svg));
+
+  &:hover, &:focus {
+    svg {
+      fill: $gray-dark;
+    }
   }
-  &--light-off::before {
-    @include decorated-icon(url(../img/icons/sun.svg));
+
+  &:active {
+    transform: scale(0.9);
   }
-  &--light-on::before {
-    @include decorated-icon(url(../img/icons/sun_2.svg));
+
+  &--r svg {
+    transform: rotate(180deg);
   }
-  &--clocks::before {
-    @include decorated-icon(url(../img/icons/scheduled.svg));
+}
+
+.slider__card-bth {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 40px;
+  background: #F7F7F7;
+  border-radius: 20px 20px 0 0;
+  display: none;
+  z-index: 1;
+  @media #{$breakpointDesktop} {
+    display: flex;
+  }
+
+  & svg {
+    fill: $gray;
+    margin: auto;
+    transition: all 0.15s linear;
+  }
+
+  &:hover, &:focus, &:active {
+    svg {
+      fill: $gray-dark
+    }
   }
 }

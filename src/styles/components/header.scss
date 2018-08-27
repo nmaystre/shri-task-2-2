@@ -1,7 +1,11 @@
 .header {
   background-color: $white;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 
   @media #{$breakpointTablet} {
+    position: static;
     border-bottom: 1px solid $gray-lighten;
   }
 }
@@ -10,7 +14,7 @@
   position: relative;
   min-width: 320px;
   width: 100%;
-  padding: $gap-m $gap-l 0;
+  padding: $gap-m $gap-l;
   margin: 0;
   display: flex;
   justify-content: space-between;
