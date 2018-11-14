@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head></head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/main.css">
+  <body class="grid">
+    <header class="header grid__header">
+      <div class="header__inner"><a class="header__logo"><img class="header__logo-pic" src="img/logo.svg" width="98" height="39" alt="Яндекс Дом"></a><a class="header__btn hamburger menu__btn" href="#"><span class="hamburger__icon"></span><span class="visually-hidden">Открыть меню</span></a>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link menu__link--active" href="#">Сводка</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Устройства</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Сценарии</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="grid__main">
+      <section class="welcome grid__welcome section section--rightspace">
+        <div class="section__header">
+          <h2 class="heading heading--l hide-tablet">Главное</h2>
+        </div>
+        <div class="welcome__inner">
+          <div class="welcome__block">
+            <h2 class="welcome__heading">Привет,&nbsp;<span class="welcome__user">Геннадий!</span></h2>
+            <p class="text text--dark">Двери и&nbsp;окна закрыты, сигнализация включена.</p>
+            <div class="forecast">
+              <div class="forecast__block">
+                <p class="forecast__location text text--light">Дома</p>
+                <p class="forecast__text"><span>+23</span></p>
+              </div>
+              <div class="forecast__block">
+                <p class="forecast__location text text--light">За окном</p>
+                <p class="forecast__text forecast__text--rain"><span> +19</span><span class="forecast__icon">
+                      <svg width="20px" height="20px">
+                        <use xlink:href="img/icons.svg#cloud"></use>
+                      </svg></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="welcome__slider">
+            <div class="slider slider--m slider--to-vertical">
+              <div class="slider__block slider__block--to-vertical slider__block--m">
+                  <div class="slider__inner"><span class="slider__icon">
+                      <svg width="24px" height="24px">
+                        <use xlink:href="img/icons.svg#temperature"></use>
+                      </svg></span>
+                    <p class="slider__heading heading heading--m">Philips Cooler</p>
+                    <p class="text text--light">Начнет охлаждать в 16:30</p>
+                  </div>
+                    <section class="modal__wrp">
+                      <div class="modal__bg"></div>
+                      <div class="modal">
+                        <div class="modal__inner">
+                          <header class="modal__header">
+                            <h2 class="modal__title heading heading--l">Philips Cooler</h2>
+                            <p class="modal__text text">Начнет охлаждать в 16:30</p>
+                            <div class="modal__status"><span class="modal__status-text">+23</span><span class="icon modal__status-icon">
+                                  <svg width="40px" height="40px">
+                                    <use xlink:href="img/icons.svg#temperature_2"></use>
+                                  </svg></span></div>
+                          </header>
+                          <div class="modal__content range">
+                            <div class="filters">
+                              <ul class="filters__list">
+                                <li class="filters__item"><a class="filters__link filters__link--on" href="#">Вручную</a></li>
+                                <li class="filters__item"><a class="filters__link" href="#">Холодно</a></li>
+                                <li class="filters__item"><a class="filters__link" href="#">Тепло</a></li>
+                                <li class="filters__item"><a class="filters__link" href="#">Жарко</a></li>
+                              </ul>
+                            </div>
+                            <div class="range__content">
+                              <input class="range__bar range__bar--rainbow" type="range">
+                              <div class="range__caption range__caption--max"><span class="range__text">+30</span></div>
+                              <div class="range__caption range__caption--min"><span class="range__text">–10</span></div>
+                              <div class="range__btn"></div>
+                            </div>
+                          </div>
+                        </div><a class="btn btn--primary modal__btn" href="#"><span>Применить</span></a><a class="btn btn--light modal__btn" href="#"><span>Закрыть</span></a>
+                      </div>
+                    </section>
+              </div>
+              <div class="slider__block slider__block--to-vertical slider__block--m">
+                  <div class="slider__inner"><span class="slider__icon">
+                      <svg width="24px" height="24px">
+                        <use xlink:href="img/icons.svg#sun"></use>
+                      </svg></span>
+                    <p class="slider__heading heading heading--m">Xiaomi Yeelight LED Smart Bulb</p>
+                    <p class="text text--light">Включится в 17:00</p>
+                  </div>
+                    <section class="modal__wrp">
+                      <div class="modal__bg"></div>
+                      <div class="modal">
+                        <div class="modal__inner">
+                          <header class="modal__header">
+                            <h2 class="modal__title heading heading--l">Xiaomi Yeelight LED Smart Bulb</h2>
+                            <p class="modal__text text">Включится в 17:00</p>
+                            <div class="modal__status"><span class="icon modal__status-icon">
+                                  <svg width="40px" height="40px">
+                                    <use xlink:href="img/icons.svg#sun"></use>
+                                  </svg></span></div>
+                          </header>
+                          <div class="modal__content range">
+                            <div class="filters">
+                              <ul class="filters__list">
+                                <li class="filters__item"><a class="filters__link filters__link--on" href="#">Вручную</a></li>
+                                <li class="filters__item"><a class="filters__link" href="#">Дневной свет</a></li>
+                                <li class="filters__item"><a class="filters__link" href="#">Вечерний свет</a></li>
+                                <li class="filters__item"><a class="filters__link" href="#">Рассвет</a></li>
+                              </ul>
+                            </div>
+                            <div class="range__content">
+                              <input class="range__bar range__bar--primary" type="range">
+                              <div class="range__caption range__caption--max">
+                                  <svg width="36px" height="36px">
+                                    <use xlink:href="img/icons.svg#sun_max"></use>
+                                  </svg>
+                              </div>
+                              <div class="range__caption range__caption--min">
+                                  <svg width="36px" height="36px">
+                                    <use xlink:href="img/icons.svg#sun_min"></use>
+                                  </svg>
+                              </div>
+                              <div class="range__btn"></div>
+                            </div>
+                          </div>
+                        </div><a class="btn btn--primary-darken modal__btn" href="#"><span>Применить</span></a><a class="btn btn--light modal__btn" href="#"><span>Закрыть</span></a>
+                      </div>
+                    </section>
+              </div>
+              <div class="slider__block slider__block--to-vertical slider__block--m">
+                  <div class="slider__inner"><span class="slider__icon">
+                      <svg width="24px" height="24px">
+                        <use xlink:href="img/icons.svg#temperature"></use>
+                      </svg></span>
+                    <p class="slider__heading heading heading--m">Elgato Eve Degree Connected</p>
+                    <p class="text text--light">Выключено до 17:00</p>
+                  </div>
+                    <section class="modal__wrp">
+                      <div class="modal__bg"></div>
+                      <div class="modal">
+                        <div class="modal__inner">
+                          <header class="modal__header">
+                            <h2 class="modal__title heading heading--l">Elgato Eve Degree Connected</h2>
+                            <p class="modal__text text">Выключено до 17:00</p>
+                            <div class="modal__status"><span class="modal__status-text">+23</span><span class="icon modal__status-icon">
+                                  <svg width="40px" height="40px">
+                                    <use xlink:href="img/icons.svg#temperature_2"></use>
+                                  </svg></span></div>
+                          </header>
+                          <div class="modal__content diagram">
+                            <div class="diagram__circle">
+                              <p class="diagram__text"><span class="diagram__temp">+23</span></p>
+                            </div>
+                          </div>
+                        </div><a class="btn btn--primary modal__btn"><span>Применить</span></a><a class="btn btn--light modal__btn"><span>Закрыть</span></a>
+                      </div>
+                    </section>
+              </div>
+              <div class="slider__block slider__block--to-vertical slider__block--m">
+                  <div class="slider__inner"><span class="slider__icon">
+                      <svg width="24px" height="24px">
+                        <use xlink:href="img/icons.svg#sun"></use>
+                      </svg></span>
+                    <p class="slider__heading heading heading--m">LIFX Mini Day &amp; Dusk A60 E27</p>
+                    <p class="text text--light">Включится в 17:00</p>
+                  </div>
+                    <section class="modal__wrp">
+                      <div class="modal__bg"></div>
+                      <div class="modal">
+                        <div class="modal__inner">
+                          <header class="modal__header">
+                            <h2 class="modal__title heading heading--l">LIFX Mini Day &amp; Dusk A60 E27</h2>
+                            <p class="modal__text text">Включится в 17:00</p>
+                            <div class="modal__status"><span class="modal__status-text">+23</span><span class="icon modal__status-icon">
+                                  <svg width="40px" height="40px">
+                                    <use xlink:href="img/icons.svg#temperature_2"></use>
+                                  </svg></span></div>
+                          </header>
+                          <div class="modal__content diagram">
+                            <div class="diagram__circle">
+                              <p class="diagram__text"><span class="diagram__temp">+23</span></p>
+                            </div>
+                          </div>
+                        </div><a class="btn btn--primary modal__btn"><span>Применить</span></a><a class="btn btn--light modal__btn"><span>Закрыть</span></a>
+                      </div>
+                    </section>
+              </div>
+              <div class="slider__block slider__block--to-vertical slider__block--m">
+                  <div class="slider__inner"><span class="slider__icon">
+                      <svg width="24px" height="24px">
+                        <use xlink:href="img/icons.svg#sun_2"></use>
+                      </svg></span>
+                    <p class="slider__heading heading heading--m">Xiaomi Mi Air Purifier 2S</p>
+                    <p class="text text--light">Включено</p>
+                  </div>
+                    <section class="modal__wrp">
+                      <div class="modal__bg"></div>
+                      <div class="modal">
+                        <div class="modal__inner">
+                          <header class="modal__header">
+                            <h2 class="modal__title heading heading--l">Xiaomi Mi Air Purifier 2S</h2>
+                            <p class="modal__text text">Включено</p>
+                            <div class="modal__status"><span class="modal__status-text">+23</span><span class="icon modal__status-icon">
+                                  <svg width="40px" height="40px">
+                                    <use xlink:href="img/icons.svg#temperature_2"></use>
+                                  </svg></span></div>
+                          </header>
+                          <div class="modal__content diagram">
+                            <div class="diagram__circle">
+                              <p class="diagram__text"><span class="diagram__temp">+23</span></p>
+                            </div>
+                          </div>
+                        </div><a class="btn btn--primary modal__btn"><span>Применить</span></a><a class="btn btn--light modal__btn"><span>Закрыть</span></a>
+                      </div>
+                    </section>
+              </div><a class="slider__card-bth" href="#">
+                  <svg width="16px" height="16px">
+                    <use xlink:href="img/icons.svg#arrow-double"></use>
+                  </svg></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="scenarios grid__scenarios">
+        <div class="section">
+          <div class="section__header">
+            <h2 class="heading heading--l">Избранные сценарии</h2>
+            <div class="slider__controls"><a class="slider__control slider__control--l" href="#">
+                  <svg width="12px" height="14px">
+                    <use xlink:href="img/icons.svg#arrow-left"></use>
+                  </svg></a><a class="slider__control slider__control--r" href="#">
+                  <svg width="12px" height="14px">
+                    <use xlink:href="img/icons.svg#arrow-left"></use>
+                  </svg></a></div>
+          </div>
+          <div class="slider slider--to-grid">
+            <div class="slider__block slider__block--s">
+                <div class="slider__inner"><span class="slider__icon">
+                    <svg width="24px" height="24px">
+                      <use xlink:href="img/icons.svg#sun_2"></use>
+                    </svg></span>
+                  <p class="slider__heading heading heading--m">Выключить весь свет в доме и во дворе</p>
+                  <p class="text text--light"></p>
+                </div>
+            </div>
+            <div class="slider__block slider__block--s">
+                <div class="slider__inner"><span class="slider__icon">
+                    <svg width="24px" height="24px">
+                      <use xlink:href="img/icons.svg#scheduled"></use>
+                    </svg></span>
+                  <p class="slider__heading heading heading--m">Я ухожу</p>
+                  <p class="text text--light"></p>
+                </div>
+            </div>
+            <div class="slider__block slider__block--s">
+                <div class="slider__inner"><span class="slider__icon">
+                    <svg width="24px" height="24px">
+                      <use xlink:href="img/icons.svg#sun_2"></use>
+                    </svg></span>
+                  <p class="slider__heading heading heading--m">Включить свет в коридоре</p>
+                  <p class="text text--light"></p>
+                </div>
+            </div>
+            <div class="slider__block slider__block--s">
+                <div class="slider__inner"><span class="slider__icon">
+                    <svg width="24px" height="24px">
+                      <use xlink:href="img/icons.svg#temperature_2"></use>
+                    </svg></span>
+                  <p class="slider__heading heading heading--m">Набрать горячую ванну</p>
+                  <p class="text text--light">Начнётся в 18:00</p>
+                </div>
+            </div>
+            <div class="slider__block slider__block--s">
+                <div class="slider__inner"><span class="slider__icon">
+                    <svg width="24px" height="24px">
+                      <use xlink:href="img/icons.svg#temperature_2"></use>
+                    </svg></span>
+                  <p class="slider__heading heading heading--m">Сделать пол тёплым во всей квартире</p>
+                  <p class="text text--light"></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="favorite grid__favorite">
+        <div class="section">
+          <div class="section__header section__header--lp">
+            <h2 class="heading heading--l">Избранные устройства</h2>
+            <div class="dropdown"><a class="dropdown__link dropdown__link--active" href="#">Все</a><a class="dropdown__link" href="#">Кухня</a><a class="dropdown__link" href="#">Зал</a><a class="dropdown__link" href="#">Лампочки</a><a class="dropdown__link" href="#">Камеры</a></div>
+          </div>
+          <div class="slider slider--to-line">
+            <div class="slider__block slider__block--m">
+                <div class="slider__inner"><span class="slider__icon">
+                    <svg width="24px" height="24px">
+                      <use xlink:href="img/icons.svg#temperature"></use>
+                    </svg></span>
+                  <p class="slider__heading heading heading--m">Philips Cooler</p>
+                  <p class="text text--light">Начнет охлаждать в 16:30</p>
+                </div>
+                  <section class="modal__wrp">
+                    <div class="modal__bg"></div>
+                    <div class="modal">
+                      <div class="modal__inner">
+                        <header class="modal__header">
+                          <h2 class="modal__title heading heading--l">Philips Cooler</h2>
+                          <p class="modal__text text">Начнет охлаждать в 16:30</p>
+                          <div class="modal__status"><span class="modal__status-text">+23</span><span class="icon modal__status-icon">
+                                <svg width="40px" height="40px">
+                                  <use xlink:href="img/icons.svg#temperature_2"></use>
+                                </svg></span></div>
+                        </header>
+                        <div class="modal__content range">
+                          <div class="filters">
+                            <ul class="filters__list">
+                              <li class="filters__item"><a class="filters__link filters__link--on" href="#">Вручную</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Холодно</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Тепло</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Жарко</a></li>
+                            </ul>
+                          </div>
+                          <div class="range__content">
+                            <input class="range__bar range__bar--rainbow" type="range">
+                            <div class="range__caption range__caption--max"><span class="range__text">+30</span></div>
+                            <div class="range__caption range__caption--min"><span class="range__text">–10</span></div>
+                            <div class="range__btn"></div>
+                          </div>
+                        </div>
+                      </div><a class="btn btn--primary modal__btn" href="#"><span>Применить</span></a><a class="btn btn--light modal__btn" href="#"><span>Закрыть</span></a>
+                    </div>
+                  </section>
+            </div>
+            <div class="slider__block slider__block--m">
+                <div class="slider__inner"><span class="slider__icon">
+                    <svg width="24px" height="24px">
+                      <use xlink:href="img/icons.svg#sun"></use>
+                    </svg></span>
+                  <p class="slider__heading heading heading--m">Xiaomi Yeelight LED Smart Bulb</p>
+                  <p class="text text--light">Включится в 17:00</p>
+                </div>
+                  <section class="modal__wrp">
+                    <div class="modal__bg"></div>
+                    <div class="modal">
+                      <div class="modal__inner">
+                        <header class="modal__header">
+                          <h2 class="modal__title heading heading--l">Xiaomi Yeelight LED Smart Bulb</h2>
+                          <p class="modal__text text">Включится в 17:00</p>
+                          <div class="modal__status"><span class="icon modal__status-icon">
+                                <svg width="40px" height="40px">
+                                  <use xlink:href="img/icons.svg#sun"></use>
+                                </svg></span></div>
+                        </header>
+                        <div class="modal__content range">
+                          <div class="filters">
+                            <ul class="filters__list">
+                              <li class="filters__item"><a class="filters__link filters__link--on" href="#">Вручную</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Дневной свет</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Вечерний свет</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Рассвет</a></li>
+                            </ul>
+                          </div>
+                          <div class="range__content">
+                            <input class="range__bar range__bar--primary" type="range">
+                            <div class="range__caption range__caption--max">
+                                <svg width="36px" height="36px">
+                                  <use xlink:href="img/icons.svg#sun_max"></use>
+                                </svg>
+                            </div>
+                            <div class="range__caption range__caption--min">
+                                <svg width="36px" height="36px">
+                                  <use xlink:href="img/icons.svg#sun_min"></use>
+                                </svg>
+                            </div>
+                            <div class="range__btn"></div>
+                          </div>
+                        </div>
+                      </div><a class="btn btn--primary-darken modal__btn" href="#"><span>Применить</span></a><a class="btn btn--light modal__btn" href="#"><span>Закрыть</span></a>
+                    </div>
+                  </section>
+            </div>
+            <div class="slider__block slider__block--m">
+                <div class="slider__inner"><span class="slider__icon">
+                    <svg width="24px" height="24px">
+                      <use xlink:href="img/icons.svg#temperature"></use>
+                    </svg></span>
+                  <p class="slider__heading heading heading--m">Elgato Eve Degree Connected</p>
+                  <p class="text text--light">Выключено до 17:00</p>
+                </div>
+                  <section class="modal__wrp">
+                    <div class="modal__bg"></div>
+                    <div class="modal">
+                      <div class="modal__inner">
+                        <header class="modal__header">
+                          <h2 class="modal__title heading heading--l">Elgato Eve Degree Connected</h2>
+                          <p class="modal__text text">Выключено до 17:00</p>
+                          <div class="modal__status"><span class="modal__status-text">+23</span><span class="icon modal__status-icon">
+                                <svg width="40px" height="40px">
+                                  <use xlink:href="img/icons.svg#temperature_2"></use>
+                                </svg></span></div>
+                        </header>
+                        <div class="modal__content range">
+                          <div class="filters">
+                            <ul class="filters__list">
+                              <li class="filters__item"><a class="filters__link filters__link--on" href="#">Вручную</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Холодно</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Тепло</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Жарко</a></li>
+                            </ul>
+                          </div>
+                          <div class="range__content">
+                            <input class="range__bar range__bar--rainbow" type="range">
+                            <div class="range__caption range__caption--max"><span class="range__text">+30</span></div>
+                            <div class="range__caption range__caption--min"><span class="range__text">–10</span></div>
+                            <div class="range__btn"></div>
+                          </div>
+                        </div>
+                      </div><a class="btn btn--primary modal__btn" href="#"><span>Применить</span></a><a class="btn btn--light modal__btn" href="#"><span>Закрыть</span></a>
+                    </div>
+                  </section>
+            </div>
+            <div class="slider__block slider__block--m">
+                <div class="slider__inner"><span class="slider__icon">
+                    <svg width="24px" height="24px">
+                      <use xlink:href="img/icons.svg#sun"></use>
+                    </svg></span>
+                  <p class="slider__heading heading heading--m">LIFX Mini Day &amp; Dusk A60 E27</p>
+                  <p class="text text--light">Включится в 17:00</p>
+                </div>
+                  <section class="modal__wrp">
+                    <div class="modal__bg"></div>
+                    <div class="modal">
+                      <div class="modal__inner">
+                        <header class="modal__header">
+                          <h2 class="modal__title heading heading--l">LIFX Mini Day &amp; Dusk A60 E27</h2>
+                          <p class="modal__text text">Включится в 17:00</p>
+                          <div class="modal__status"><span class="modal__status-text">+23</span><span class="icon modal__status-icon">
+                                <svg width="40px" height="40px">
+                                  <use xlink:href="img/icons.svg#temperature_2"></use>
+                                </svg></span></div>
+                        </header>
+                        <div class="modal__content diagram">
+                          <div class="diagram__circle">
+                            <p class="diagram__text"><span class="diagram__temp">+23</span></p>
+                          </div>
+                        </div>
+                      </div><a class="btn btn--primary modal__btn"><span>Применить</span></a><a class="btn btn--light modal__btn"><span>Закрыть</span></a>
+                    </div>
+                  </section>
+            </div>
+            <div class="slider__block slider__block--m">
+                <div class="slider__inner"><span class="slider__icon">
+                    <svg width="24px" height="24px">
+                      <use xlink:href="img/icons.svg#sun"></use>
+                    </svg></span>
+                  <p class="slider__heading heading heading--m">Xiaomi Mi Air Purifier 2S</p>
+                  <p class="text text--light">Выключено</p>
+                </div>
+                  <section class="modal__wrp">
+                    <div class="modal__bg"></div>
+                    <div class="modal">
+                      <div class="modal__inner">
+                        <header class="modal__header">
+                          <h2 class="modal__title heading heading--l">Xiaomi Mi Air Purifier 2S</h2>
+                          <p class="modal__text text">Выключено</p>
+                          <div class="modal__status"><span class="icon modal__status-icon">
+                                <svg width="40px" height="40px">
+                                  <use xlink:href="img/icons.svg#sun"></use>
+                                </svg></span></div>
+                        </header>
+                        <div class="modal__content range">
+                          <div class="filters">
+                            <ul class="filters__list">
+                              <li class="filters__item"><a class="filters__link filters__link--on" href="#">Вручную</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Дневной свет</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Вечерний свет</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Рассвет</a></li>
+                            </ul>
+                          </div>
+                          <div class="range__content">
+                            <input class="range__bar range__bar--primary" type="range">
+                            <div class="range__caption range__caption--max">
+                                <svg width="36px" height="36px">
+                                  <use xlink:href="img/icons.svg#sun_max"></use>
+                                </svg>
+                            </div>
+                            <div class="range__caption range__caption--min">
+                                <svg width="36px" height="36px">
+                                  <use xlink:href="img/icons.svg#sun_min"></use>
+                                </svg>
+                            </div>
+                            <div class="range__btn"></div>
+                          </div>
+                        </div>
+                      </div><a class="btn btn--primary-darken modal__btn" href="#"><span>Применить</span></a><a class="btn btn--light modal__btn" href="#"><span>Закрыть</span></a>
+                    </div>
+                  </section>
+            </div>
+            <div class="slider__block slider__block--m">
+                <div class="slider__inner"><span class="slider__icon">
+                    <svg width="24px" height="24px">
+                      <use xlink:href="img/icons.svg#sun_2"></use>
+                    </svg></span>
+                  <p class="slider__heading heading heading--m">Xiaomi Mi Air Purifier 2S</p>
+                  <p class="text text--light">Включено</p>
+                </div>
+                  <section class="modal__wrp">
+                    <div class="modal__bg"></div>
+                    <div class="modal">
+                      <div class="modal__inner">
+                        <header class="modal__header">
+                          <h2 class="modal__title heading heading--l">Xiaomi Mi Air Purifier 2S</h2>
+                          <p class="modal__text text">Включено</p>
+                          <div class="modal__status"><span class="icon modal__status-icon">
+                                <svg width="40px" height="40px">
+                                  <use xlink:href="img/icons.svg#sun"></use>
+                                </svg></span></div>
+                        </header>
+                        <div class="modal__content range">
+                          <div class="filters">
+                            <ul class="filters__list">
+                              <li class="filters__item"><a class="filters__link filters__link--on" href="#">Вручную</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Дневной свет</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Вечерний свет</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Рассвет</a></li>
+                            </ul>
+                          </div>
+                          <div class="range__content">
+                            <input class="range__bar range__bar--primary" type="range">
+                            <div class="range__caption range__caption--max">
+                                <svg width="36px" height="36px">
+                                  <use xlink:href="img/icons.svg#sun_max"></use>
+                                </svg>
+                            </div>
+                            <div class="range__caption range__caption--min">
+                                <svg width="36px" height="36px">
+                                  <use xlink:href="img/icons.svg#sun_min"></use>
+                                </svg>
+                            </div>
+                            <div class="range__btn"></div>
+                          </div>
+                        </div>
+                      </div><a class="btn btn--primary-darken modal__btn" href="#"><span>Применить</span></a><a class="btn btn--light modal__btn" href="#"><span>Закрыть</span></a>
+                    </div>
+                  </section>
+            </div>
+            <div class="slider__block slider__block--m">
+                <div class="slider__inner"><span class="slider__icon">
+                    <svg width="24px" height="24px">
+                      <use xlink:href="img/icons.svg#sun_2"></use>
+                    </svg></span>
+                  <p class="slider__heading heading heading--m">Xiaomi Mi Air Purifier 2S</p>
+                  <p class="text text--light">Включено</p>
+                </div>
+                  <section class="modal__wrp">
+                    <div class="modal__bg"></div>
+                    <div class="modal">
+                      <div class="modal__inner">
+                        <header class="modal__header">
+                          <h2 class="modal__title heading heading--l">Xiaomi Mi Air Purifier 2S</h2>
+                          <p class="modal__text text">Включено</p>
+                          <div class="modal__status"><span class="icon modal__status-icon">
+                                <svg width="40px" height="40px">
+                                  <use xlink:href="img/icons.svg#sun"></use>
+                                </svg></span></div>
+                        </header>
+                        <div class="modal__content range">
+                          <div class="filters">
+                            <ul class="filters__list">
+                              <li class="filters__item"><a class="filters__link filters__link--on" href="#">Вручную</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Дневной свет</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Вечерний свет</a></li>
+                              <li class="filters__item"><a class="filters__link" href="#">Рассвет</a></li>
+                            </ul>
+                          </div>
+                          <div class="range__content">
+                            <input class="range__bar range__bar--primary" type="range">
+                            <div class="range__caption range__caption--max">
+                                <svg width="36px" height="36px">
+                                  <use xlink:href="img/icons.svg#sun_max"></use>
+                                </svg>
+                            </div>
+                            <div class="range__caption range__caption--min">
+                                <svg width="36px" height="36px">
+                                  <use xlink:href="img/icons.svg#sun_min"></use>
+                                </svg>
+                            </div>
+                            <div class="range__btn"></div>
+                          </div>
+                        </div>
+                      </div><a class="btn btn--primary-darken modal__btn" href="#"><span>Применить</span></a><a class="btn btn--light modal__btn" href="#"><span>Закрыть</span></a>
+                    </div>
+                  </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer class="footer grid__footer">
+    <div class="footer__inner">
+      <ul class="footer__nav">
+        <li class="footer__nav-item"><a class="footer__nav-link">Помощь</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link">Обратная связь</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link">Разработчикам</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link">Условия использования</a></li>
+      </ul>
+      <div class="copyright">
+        <p class="copyright__date">&copy; 2001&ndash;<span class="copyright__currentyear currentyear"></span></p><a class="copyright__link" href="https://yandex.ru" target="_blank">ООО &laquo;Яндекс&raquo;</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bundle.js"></script>
+</html>
